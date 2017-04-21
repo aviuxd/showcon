@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Schedule" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+<g>
+	<rect x="6" y="7" fill="#666666" width="2" height="2"/>
+	<rect x="9" y="7" fill="#666666" width="2" height="2"/>
+	<rect x="12" y="7" fill="#666666" width="2" height="2"/>
+	<rect x="3" y="10" fill="#666666" width="2" height="2"/>
+	<rect x="6" y="10" fill="#666666" width="2" height="2"/>
+	<rect x="9" y="10" fill="#666666" width="2" height="2"/>
+	<rect x="12" y="10" fill="#666666" width="2" height="2"/>
+	<rect x="3" y="13" fill="#666666" width="2" height="2"/>
+	<rect x="6" y="13" fill="#666666" width="2" height="2"/>
+	<rect x="9" y="13" fill="#666666" width="2" height="2"/>
+	<path fill="#666666" d="M14,3V1h-3v2h-1V1H7v2H6V1H3v2H1v14h15V3H14z M12,2h1v3h-1V2z M8,2h1v3H8V2z M4,2h1v3H4V2z M15,16H2V4h1v2
+		h3V4h1v2h3V4h1v2h3V4h1V16z"/>
+</g>
+</svg>

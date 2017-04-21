@@ -1,0 +1,98 @@
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-face { 
+             font-family:"ProximaNovaRegular";
+             src:url("../fonts/proxima-nova-regular.eot?");
+           }
+@font-face { 
+             font-family:"ProximaNovaSemibold";
+             src:url("../fonts/proxima-nova-semibold.eot?");
+           }
+@font-face { 
+             font-family: "ProximaNovaItalic";
+             src:url("../fonts/proxima-nova-regular-italic.eot?");
+           }
+
+
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: local('â˜º'), url('../../fonts/proxima-nova-regular.woff') format('woff'); //IE Hack
+	// src /*\**/: url('../../fonts/proxima-nova-regular.eot')\?;
+	src: url('../fonts/proxima-nova-regular.eot?#iefix') format('embedded-opentype'), 
+	     url('../fonts/proxima-nova-regular.woff') format('woff'), 
+	     url('../fonts/proxima-nova-regular.ttf')  format('truetype'),
+	     url('../fonts/proxima-nova-regular.svg#svgProximaNovaRegular') format('svg');
+	}
+
+@font-face {
+	font-family: 'ProximaNovaSemibold';
+	src: url('../fonts/proxima-nova-semibold.eot?#iefix') format('embedded-opentype'), 
+	     url('../fonts/proxima-nova-semibold.woff') format('woff'), 
+	     url('../fonts/proxima-nova-semibold.ttf')  format('truetype'),
+	     url('../fonts/proxima-nova-semibold.svg#svgProximaNovaSemibold') format('svg');
+	}
+
+@font-face {
+	font-family: 'ProximaNovaItalic';
+	src: url('../fonts/proxima-nova-regular-italic.eot?#iefix') format('embedded-opentype'), 
+	     url('../fonts/proxima-nova-regular-italic.woff') format('woff'), 
+	     url('../fonts/proxima-nova-regular-italic.ttf')  format('truetype'),
+	     url('../fonts/proxima-nova-regular-italic.svg#svgProximaNovaItalic') format('svg');
+	}
+
+@font-family-sans-serif: ProximaNovaRegular;
+
+body{
+	@font-family:	ProximaNovaRegular;
+}
+
+//
+//Navbar colors
+// --------------------------------------------------
+@nav-fill:				#293D5D; //#0780A4;
+@nav-text:				#ffffff; //#41bb8f;
+@nav-links:				@nav-text;
+
+//
+//Footer Colors
+// --------------------------------------------------
+@footer-text-color:		#ffffff;
+@footer-bg-color:		#293D5D;
+
+
+@header-bg-color:		#d7e4ed;
+@header-text-color:		#777777;
+
+@brand-primary:         #4078A1;
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+//
+// Sections
+// --------------------------------------------------
+@hero-text:				#ffffff;
+@hero-bg:				#3967AC;
+
+
+//
+// Typography Variables
+// --------------------------------------------------
+
+@font-size-base:          12px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+@font-wieght-light:		200;
+@font-weight-regular:	400;
+@font-weight-bold:		800;

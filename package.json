@@ -1,0 +1,55 @@
+{
+  "author": "Avi Singh",
+  "name": "glob",
+  "description": "",
+  "version": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "glob.js",
+  "files": [
+    "glob.js",
+    "sync.js",
+    "common.js"
+  ],
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "fs-extra": "^2.1.2",
+    "inflight": "^1.0.4",
+    "inherits": "2",
+    "minimatch": "^2.0.1",
+    "once": "^1.3.0",
+    "path-is-absolute": "^1.0.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.12.3",
+    "csvtojson": "^0.3.21",
+    "express": "~3.4.4",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "hound": "^1.0.4",
+    "jquery": "^2.1.3",
+    "method-override": "^2.3.2",
+    "mkdirp": "0",
+    "mongoose": "~3.6.2",
+    "morgan": "^1.5.2",
+    "rimraf": "^2.2.8",
+    "tap": "^0.5.0",
+    "tick": "0.0.6"
+  },
+  "scripts": {
+    "prepublish": "npm run benchclean",
+    "profclean": "rm -f v8.log profile.txt",
+    "test": "npm run profclean && tap test/*.js",
+    "test-regen": "npm run profclean && TEST_REGEN=1 node test/00-setup.js",
+    "bench": "bash benchmark.sh",
+    "prof": "bash prof.sh && cat profile.txt",
+    "benchclean": "bash benchclean.sh"
+  },
+  "license": "ISC"
+}
