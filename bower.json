@@ -1,0 +1,26 @@
+{
+  "name": "icon-library",
+  "version": "0.0.0",
+  "homepage": "https://github.com/aviuxd/icon-library",
+  "authors": [
+    "Avi Singh <avinab.singh@gmail.com>"
+  ],
+  "description": "Project to create icon library from icons folder.",
+  "keywords": [
+    "icons",
+    "library",
+    "styleguide"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7"
+  }
+}
