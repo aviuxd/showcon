@@ -1,13 +1,13 @@
 @font-face {
   font-family: "RobotoLight";
-  src: url("https://fonts.googleapis.com/css?family=Roboto:300") format('woff2');
+  src: url("https://fonts.gstatic.com/s/roboto/v16/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2") format('woff2');
 }
 @font-face {
   font-family: "RobotoRegular";
-  src: url("https://fonts.googleapis.com/css?family=Roboto:400") format('woff2');
+  src: url("https://fonts.gstatic.com/s/roboto/v16/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2") format('woff2');
 }
 .navbar {
-  background-color: #293D5D;
+  background-color: #00a1c5;
   border: 0px;
   color: #ffffff;
   border-radius: 0px;
@@ -29,7 +29,7 @@
 .nav-link > li > a:hover {
   color: #e6e6e6;
   text-decoration: none;
-  background-color: #293D5D;
+  background-color: #00a1c5;
 }
 .nav-link > li > a:active {
   color: #ffffff;
@@ -39,7 +39,7 @@
 }
 .navbar-brand {
   color: #fff;
-  font-family: RobotoRegular;
+  font-family: RobotoLight;
   padding: 7px 15px;
   font-size: 24px;
 }
@@ -113,18 +113,17 @@
   height: 110px;
   overflow: wrap;
   word-wrap: break-word;
-  border: 1px solid #D1E6F0;
-  border-radius: 5px;
+  border: 1px solid #18bffb;
+  border-radius: 0px;
 }
 .icons div p {
   font-family: RobotoRegular;
-  color: #4FA5C4;
+  color: #00a4da;
   text-align: center;
   padding-top: 10px;
 }
 .icons div img {
-  margin-left: 45%;
-  margin-right: auto;
+  margin-left: calc(45%);
   vertical-align: center;
   height: 32px;
   width: auto;
