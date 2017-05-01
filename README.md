@@ -4,15 +4,15 @@ Allows designers and developers to create easy to maintain and extenadable icon 
 
 ## Installation and Usage
 
-1. Clone this repo and 'cd' into the folder in terminal.
+1. Clone this repo and `cd` into the folder in terminal.
 2. Install dependencies using
 	
-	npm install (Test it out)
+		npm install
 
 3. Add your icons to `icons` folder.
 4. Terminal into the app folder and start the by typing `node app.js`.
 5. Go into the browser and open `localhost:35700` to view your icons on the page.
-6. `showcon/icons' folder is watched by Showcon while running. You can continue adding removing icons from the folder and refreshing the page will provide latest list of icons. 
+6. `showcon/icons` folder is watched by Showcon while running. You can continue adding removing icons from the folder and refreshing the page will provide latest list of icons. 
 
 ## Customization
 
