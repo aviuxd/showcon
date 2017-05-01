@@ -21,3 +21,7 @@ Allows designers and developers to create easy to maintain and extenadable icon 
 
 1. In the `showcon/public` folder you can customize the `index.html` to suit your specific needs.
 2. All CSS customization can be done by editing files in `public/less` folder.
+
+### Credits
+
+1. Sample icons included in `showcon/icons` folder are available at [UXPIN](https://www.uxpin.com/uxpin-icon-set.html) 
