@@ -4,26 +4,26 @@
 	var fs 		= require('fs-extra');
    	var morgan 	= require('morgan');        // log requests to the console (express4)
 	var hound 	= require('hound');			//Package to watch folder for change
-	var pattern = "./svg/*";				//Path to scan and get list of images
+	var pattern = "./icons/*";				//Path to scan and get list of images
 
-	function CopySVGFolder(){
+	function CopyIconsFolder(){
 		try {
-		  fs.copy('./svg', './public/svg')
-		  console.log("SVG Folder Copied to Public")
+		  fs.copy('./icons', './public/icons')
+		  console.log("Icons Folder Copied to Public")
 		} catch (err) {
 		  console.error(err)
 		}
 	}
 
-	function RemoveSVGFolder(){
+	function RemoveIconsFolder(){
 		console.log("start removing folder")
-		fs.remove("./public/svg", function(err) {
+		fs.remove("./public/icons", function(err) {
 		    if(err) {
 		        return console.log(err)
 		    }
 		    console.log("folder deleted")
 		})	
-		setTimeout(CopySVGFolder, 2500)	 
+		setTimeout(CopyIconsFolder, 2500)	 
 	}
 
 	function runGlob(){
@@ -31,7 +31,7 @@
 
 		  var matchesJSON = JSON.stringify(matches);
 
-			fs.writeFile("./public/svg.json", matchesJSON, function(err) {
+			fs.writeFile("./public/icons.json", matchesJSON, function(err) {
 			    if(err) {
 			        return console.log(err);
 			    }
@@ -40,10 +40,10 @@
 			console.log("");
 			return matches
 		})
-		RemoveSVGFolder()
+		RemoveIconsFolder()
 	}
 
-	watcher = hound.watch("./svg");
+	watcher = hound.watch("./icons");
 
 	watcher.on('create', function(file, stats) {
 	  	console.log(file + ' was created')

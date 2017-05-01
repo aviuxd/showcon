@@ -1,7 +1,7 @@
 $(function(){
 
   function loadfail(){
-    console.log("Error: Failed to load file!");
+    console.log("Error: Failed to load icons.json");
   }; //end of LOADFAIL
 
   function parse(data){
@@ -10,7 +10,7 @@ $(function(){
   		var imageURL = data[i];
 
   		//Clips File Path to extract filename
-  		var iconName = imageURL.slice(6);
+  		var iconName = imageURL.slice(8);
 
   		//Append Icon and Name to DOM
   		$('.icons').append(
@@ -22,7 +22,7 @@ $(function(){
 
   $.ajax({
     type: 'GET',
-    url: 'svg.json',    // name of file with our data
+    url: 'icons.json',    // name of file with our data
     dataType: 'json',    // type of file we will be reading
     success: parse,// name of function to call when done reading file
     error: loadfail     // name of function to call when failed to read
