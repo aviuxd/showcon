@@ -6,20 +6,26 @@
 	var hound 	= require('hound');			//Package to watch folder for change
 	var pattern = "./svg/*";				//Path to scan and get list of images
 
-	function copyFolder(){
-		fs.remove("./public/svg", function(err) {
-		    if(err) {
-		        return console.log(err);
-		    }
-		    console.log("folder deleted");
-		});		 
+	function CopySVGFolder(){
 		try {
 		  fs.copy('./svg', './public/svg')
-		  console.log("success!")
+		  console.log("SVG Folder Copied to Public")
 		} catch (err) {
 		  console.error(err)
 		}
 	}
+
+	function RemoveSVGFolder(){
+		console.log("start removing folder")
+		fs.remove("./public/svg", function(err) {
+		    if(err) {
+		        return console.log(err)
+		    }
+		    console.log("folder deleted")
+		})	
+		setTimeout(CopySVGFolder, 2500)	 
+	}
+
 	function runGlob(){
 		var mg = new Glob(pattern, {mark: true}, function (er, matches) {
 
@@ -34,7 +40,7 @@
 			console.log("");
 			return matches
 		})
-		copyFolder()
+		RemoveSVGFolder()
 	}
 
 	watcher = hound.watch("./svg");
