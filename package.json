@@ -1,11 +1,11 @@
 {
   "author": "Avi Singh",
-  "name": "glob",
-  "description": "",
+  "name": "showcon",
+  "description": "A tool to help designers create a page with all icon assets. No more creating unmaintainable PDF files.",
   "version": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/aviuxd/showcon"
   },
   "main": "glob.js",
   "files": [
@@ -45,14 +45,5 @@
     "tap": "^0.5.0",
     "tick": "0.0.6"
   },
-  "scripts": {
-    "prepublish": "npm run benchclean",
-    "profclean": "rm -f v8.log profile.txt",
-    "test": "npm run profclean && tap test/*.js",
-    "test-regen": "npm run profclean && TEST_REGEN=1 node test/00-setup.js",
-    "bench": "bash benchmark.sh",
-    "prof": "bash prof.sh && cat profile.txt",
-    "benchclean": "bash benchclean.sh"
-  },
-  "license": "ISC"
+  "license": "MIT"
 }
