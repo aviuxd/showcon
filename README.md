@@ -15,7 +15,7 @@ Allows designers and developers to create easy to maintain and extenadable icon 
 
 ## Customization
 
-* In the `showcon/public` folder you can customize the `index.html` to suit your specific needs.
-* All CSS customization can be done by editing files in `public/less` folder.
+1. In the `showcon/public` folder you can customize the `index.html` to suit your specific needs.
+2. All CSS customization can be done by editing files in `public/less` folder.
 
 
