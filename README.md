@@ -1,6 +1,6 @@
 # Showcon
 
-Allows designers and developers to create easy to maintain and extenadable icon library. Does not work with latest NodeJS please use [ NVM ] (https://github.com/creationix/nvm) to use `nodejs 6.5`. 
+Allows designers and developers to create easy to maintain and extenadable icon library. Does not work with latest NodeJS please use [NVM](https://github.com/creationix/nvm) to use `nodejs 6.5`. 
 
 ## How to use
 
